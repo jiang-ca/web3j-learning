@@ -1,0 +1,17 @@
+# Maven / Java
+/target/
+*.class
+
+# IntelliJ IDEA
+/.idea/
+*.iml
+/out/
+
+# Local configuration and logs
+.env
+.env.*
+*.log
+
+# Operating system
+.DS_Store
+Thumbs.db
