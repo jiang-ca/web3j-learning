@@ -22,7 +22,7 @@
 | W1.4 | [组合基本查询](docs/W1.4.md) | [BasicNodeInfoDemo.java](src/main/java/com/example/web3jstudy/BasicNodeInfoDemo.java) | ✅ |
 | W1.5 | [错误处理](docs/W1.5.md) | [RpcErrorHandlingDemo.java](src/main/java/com/example/web3jstudy/RpcErrorHandlingDemo.java) | ✅ |
 | W1.6 | [同步与异步调用](docs/W1.6.md) | [SyncAsyncDemo.java](src/main/java/com/example/web3jstudy/SyncAsyncDemo.java) | ✅ |
-| W1.7 | [超时与客户端生命周期](docs/W1.7.md) | [TimeoutLifecycleDemo.java](src/main/java/com/example/web3jstudy/TimeoutLifecycleDemo.java) | 🔄 |
+| W1.7 | [超时与客户端生命周期](docs/W1.7.md) | [TimeoutLifecycleDemo.java](src/main/java/com/example/web3jstudy/TimeoutLifecycleDemo.java) | ✅ |
 
 # 仓库约定
 
@@ -45,16 +45,16 @@
 ```text
 W0｜最小工程与第一次调用           ✅ 已通过
 
-W1｜Web3j 客户端、请求与响应       🔄 进行中
+W1｜Web3j 客户端、请求与响应       ✅ 已通过
 W1.1｜查询 Chain ID               ✅ 已通过
 W1.2｜客户端与通信组件             ✅ 已通过
 W1.3｜请求对象与响应对象           ✅ 已通过
 W1.4｜组合基本查询                 ✅ 已通过
 W1.5｜错误处理                     ✅ 已通过
 W1.6｜同步与异步调用               ✅ 已通过
-W1.7｜超时与客户端生命周期         🔄 学习中
+W1.7｜超时与客户端生命周期         ✅ 已通过
 
-W2｜区块、交易、回执与 BNB 余额    ⬜ 未开始
+W2｜区块、交易、回执与 BNB 余额    🔄 下一阶段
 W3｜ABI 与只读合约调用            ⬜ 未开始
 W4｜合约事件查询与解析            ⬜ 未开始
 W5｜测试环境签名与发送交易         ⬜ 未开始
