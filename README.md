@@ -23,7 +23,8 @@
 | W1.5 | [错误处理](docs/W1.5.md) | [RpcErrorHandlingDemo.java](src/main/java/com/example/web3jstudy/w1/RpcErrorHandlingDemo.java) | ✅ |
 | W1.6 | [同步与异步调用](docs/W1.6.md) | [SyncAsyncDemo.java](src/main/java/com/example/web3jstudy/w1/SyncAsyncDemo.java) | ✅ |
 | W1.7 | [超时与客户端生命周期](docs/W1.7.md) | [TimeoutLifecycleDemo.java](src/main/java/com/example/web3jstudy/w1/TimeoutLifecycleDemo.java) | ✅ |
-| W2.1 | [数值、单位与精度](docs/W2.1.md) | [NumberUnitPrecisionDemo.java](src/main/java/com/example/web3jstudy/w2/NumberUnitPrecisionDemo.java) | 🔄 |
+| W2.1 | [数值、单位与精度](docs/W2.1.md) | [NumberUnitPrecisionDemo.java](src/main/java/com/example/web3jstudy/w2/NumberUnitPrecisionDemo.java) | ⏳ |
+| W2.2 | [查询 BNB 余额](docs/W2.2.md) | [BnbBalanceDemo.java](src/main/java/com/example/web3jstudy/w2/BnbBalanceDemo.java) | 🔄 |
 
 # Java Package 结构
 
