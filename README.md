@@ -98,3 +98,24 @@ https://rpc.ankr.com/bsc/替换为你的_API_KEY
 真实 API Key 不提交到公开仓库。
 
 本仓库当前示例只涉及只读 RPC 查询，不包含钱包私钥、助记词或真实资产交易。
+
+
+## W1.7｜超时与客户端生命周期
+
+文件：
+
+```text
+src/main/java/com/example/web3jstudy/TimeoutLifecycleDemo.java
+```
+
+学习内容：
+
+- 自定义 `OkHttpClient` 超时
+- `connectTimeout`
+- `readTimeout`
+- `writeTimeout`
+- `callTimeout`
+- Web3j / HttpService / OkHttpClient 的复用
+- `web3j.shutdown()` 与客户端生命周期
+
+状态：🔄 待验收
