@@ -2,31 +2,82 @@
 
 面向 BNB Smart Chain（BSC）的 Java / Web3j 学习示例。
 
-# W1.3｜请求对象与响应对象
+当前课程基线：
 
-当前提交包含 W1.3 的独立示例 `RequestResponseDemo`，展示请求 JSON、原始响应正文、请求与响应 ID，以及区块号结果解码。不依赖其他小节的源码。
+- JDK 21
+- Maven
+- Web3j 5.0.3
+- BNB Smart Chain（BSC）
+- Ankr HTTPS RPC
+- IDEA 直接运行示例类
 
-环境沿用课程基线：JDK 21、Maven、Web3j 5.0.3。
+仓库中的示例彼此独立，不依赖上一小节的 Java 类或工具方法。RPC 地址在源码中只保留占位符，真实 API Key 仅在本地填写。
 
-在 IDEA 中打开本项目并加载 Maven 依赖，在 `src/main/java/com/example/web3jstudy/RequestResponseDemo.java` 中把 `rpcUrl` 替换为自己的 Ankr BSC 主网 HTTPS Endpoint，直接运行 `main`。
+# 当前示例
 
-仓库只保留 RPC 地址占位符。真实 API Key 仅在本地填写，不要提交到仓库或包含在公开截图中；`.gitignore` 不会隐藏已经跟踪的 Java 源码中的凭证。
+## W1.3｜请求对象与响应对象
 
-# 输出示例
-
-下面的 ID 和区块号仅用于说明格式，不是实时查询记录：
+文件：
 
 ```text
-请求 JSON：{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":0}
-预期响应类型：EthBlockNumber
-响应 JSON：{"jsonrpc":"2.0","id":0,"result":"0x782d88a"}
-响应 ID：0
-result：0x782d88a
-区块号：126015626
+src/main/java/com/example/web3jstudy/RequestResponseDemo.java
 ```
 
-程序只执行一次只读 RPC 查询，不签名或广播链上交易。查看请求 JSON 不会发送请求，读取响应字段不会再次访问节点。本例没有执行 Chain ID 校验，目标网络由填写的 Endpoint 决定。
+学习内容：
 
-# 验收状态
+- `Request<?, EthBlockNumber>`
+- JSON-RPC 请求字段
+- 请求与响应 ID
+- 原始响应 JSON
+- `result` 与解码后区块号
 
-W1.3 待实操验收。代码入库不代表本节验收通过。
+状态：✅ 已验收
+
+## W1.4｜组合基本查询
+
+文件：
+
+```text
+src/main/java/com/example/web3jstudy/BasicNodeInfoDemo.java
+```
+
+学习内容：
+
+- `eth_chainId`
+- `eth_blockNumber`
+- `web3_clientVersion`
+- 同一个 Web3j 客户端执行多次独立 RPC 查询
+
+状态：✅ 已验收
+
+实际验收时曾成功得到 BSC Mainnet Chain ID 56、最新区块号和远端节点客户端信息。
+
+## W1.5｜错误处理
+
+文件：
+
+```text
+src/main/java/com/example/web3jstudy/RpcErrorHandlingDemo.java
+```
+
+学习内容：
+
+- HTTP / RPC 服务访问失败
+- `IOException`
+- JSON-RPC `error`
+- 响应结果完整性检查
+- 业务配置校验
+
+状态：🔄 待验收
+
+# 安全说明
+
+源码中的 RPC 地址保持：
+
+```text
+https://rpc.ankr.com/bsc/替换为你的_API_KEY
+```
+
+真实 API Key 不提交到公开仓库。
+
+本仓库的示例目前只涉及只读 RPC 查询，不包含钱包私钥、助记词或真实资产交易。
