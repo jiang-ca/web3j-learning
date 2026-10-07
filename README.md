@@ -1,121 +1,48 @@
-# Web3j 学习
+# Web3j Learning
 
-面向 BNB Smart Chain（BSC）的 Java / Web3j 学习示例。
+面向 BNB Smart Chain（BSC）的 Java / Web3j 学习仓库。
 
-当前课程基线：
+# 学习环境
 
 - JDK 21
 - Maven
 - Web3j 5.0.3
 - BNB Smart Chain（BSC）
 - Ankr HTTPS RPC
-- IDEA 直接运行示例类
+- IntelliJ IDEA
 
-仓库中的示例彼此独立，不依赖上一小节的 Java 类或工具方法。RPC 地址在源码中只保留占位符，真实 API Key 仅在本地填写。
+# 教程目录
 
-# 当前示例
+| 课节 | 教程 | 示例代码 | 状态 |
+|---|---|---|---|
+| W0 | [最小工程与第一次调用](docs/W0.md) | [FirstRpcDemo.java](src/main/java/com/example/web3jstudy/FirstRpcDemo.java) | ✅ |
+| W1.1 | [查询 Chain ID](docs/W1.1.md) | [ChainIdDemo.java](src/main/java/com/example/web3jstudy/ChainIdDemo.java) | ✅ |
+| W1.2 | [客户端与通信组件](docs/W1.2.md) | [ClientServiceDemo.java](src/main/java/com/example/web3jstudy/ClientServiceDemo.java) | ✅ |
+| W1.3 | [请求对象与响应对象](docs/W1.3.md) | [RequestResponseDemo.java](src/main/java/com/example/web3jstudy/RequestResponseDemo.java) | ✅ |
+| W1.4 | [组合基本查询](docs/W1.4.md) | [BasicNodeInfoDemo.java](src/main/java/com/example/web3jstudy/BasicNodeInfoDemo.java) | ✅ |
+| W1.5 | [错误处理](docs/W1.5.md) | [RpcErrorHandlingDemo.java](src/main/java/com/example/web3jstudy/RpcErrorHandlingDemo.java) | ✅ |
+| W1.6 | [同步与异步调用](docs/W1.6.md) | [SyncAsyncDemo.java](src/main/java/com/example/web3jstudy/SyncAsyncDemo.java) | 🔄 |
+| W1.7 | [超时与客户端生命周期](docs/W1.7.md) | [TimeoutLifecycleDemo.java](src/main/java/com/example/web3jstudy/TimeoutLifecycleDemo.java) | 🔄 |
 
-## W1.3｜请求对象与响应对象
+# 仓库约定
 
-文件：
+每个课节：
 
-```text
-src/main/java/com/example/web3jstudy/RequestResponseDemo.java
-```
+- 教程单独保存在 `docs/` 下；
+- Java 示例独立可运行，不依赖上一节的 Java 类；
+- 知识点可以承接上一节，不重复基础内容；
+- RPC 地址仅保留占位符；
+- 真实 API Key、钱包私钥和助记词不得提交到仓库。
 
-学习内容：
-
-- `Request<?, EthBlockNumber>`
-- JSON-RPC 请求字段
-- 请求与响应 ID
-- 原始响应 JSON
-- `result` 与解码后区块号
-
-状态：✅ 已验收
-
-## W1.4｜组合基本查询
-
-文件：
-
-```text
-src/main/java/com/example/web3jstudy/BasicNodeInfoDemo.java
-```
-
-学习内容：
-
-- `eth_chainId`
-- `eth_blockNumber`
-- `web3_clientVersion`
-- 同一个 Web3j 客户端执行多次独立 RPC 查询
-
-状态：✅ 已验收
-
-## W1.5｜错误处理
-
-文件：
+# 当前进度
 
 ```text
-src/main/java/com/example/web3jstudy/RpcErrorHandlingDemo.java
+W0    ✅
+W1.1  ✅
+W1.2  ✅
+W1.3  ✅
+W1.4  ✅
+W1.5  ✅
+W1.6  🔄 待验收
+W1.7  🔄 待验收
 ```
-
-学习内容：
-
-- HTTP / RPC 服务访问失败
-- `IOException`
-- JSON-RPC `error`
-- 响应结果完整性检查
-- 业务配置校验
-
-状态：✅ 已验收
-
-## W1.6｜同步与异步调用
-
-文件：
-
-```text
-src/main/java/com/example/web3jstudy/SyncAsyncDemo.java
-```
-
-学习内容：
-
-- `.send()` 同步调用
-- `.sendAsync()` 异步调用
-- `CompletableFuture`
-- `CompletableFuture.allOf(...).join()`
-- 异步异常的 `CompletionException`
-- 异步调用与 JSON-RPC Batch 的区别
-
-状态：🔄 待验收
-
-# 安全说明
-
-源码中的 RPC 地址保持：
-
-```text
-https://rpc.ankr.com/bsc/替换为你的_API_KEY
-```
-
-真实 API Key 不提交到公开仓库。
-
-本仓库当前示例只涉及只读 RPC 查询，不包含钱包私钥、助记词或真实资产交易。
-
-
-## W1.7｜超时与客户端生命周期
-
-文件：
-
-```text
-src/main/java/com/example/web3jstudy/TimeoutLifecycleDemo.java
-```
-
-学习内容：
-
-- 自定义 `OkHttpClient` 超时
-- `connectTimeout`
-- `readTimeout`
-- `writeTimeout`
-- `callTimeout`
-- Web3j / HttpService / OkHttpClient 的复用
-- `web3j.shutdown()` 与客户端生命周期
-
-状态：🔄 待验收
