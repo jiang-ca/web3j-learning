@@ -15,15 +15,37 @@
 
 | 课节 | 教程 | 示例代码 | 状态 |
 |---|---|---|---|
-| W0 | [最小工程与第一次调用](docs/W0.md) | [FirstRpcDemo.java](src/main/java/com/example/web3jstudy/FirstRpcDemo.java) | ✅ |
-| W1.1 | [查询 Chain ID](docs/W1.1.md) | [ChainIdDemo.java](src/main/java/com/example/web3jstudy/ChainIdDemo.java) | ✅ |
-| W1.2 | [客户端与通信组件](docs/W1.2.md) | [ClientServiceDemo.java](src/main/java/com/example/web3jstudy/ClientServiceDemo.java) | ✅ |
-| W1.3 | [请求对象与响应对象](docs/W1.3.md) | [RequestResponseDemo.java](src/main/java/com/example/web3jstudy/RequestResponseDemo.java) | ✅ |
-| W1.4 | [组合基本查询](docs/W1.4.md) | [BasicNodeInfoDemo.java](src/main/java/com/example/web3jstudy/BasicNodeInfoDemo.java) | ✅ |
-| W1.5 | [错误处理](docs/W1.5.md) | [RpcErrorHandlingDemo.java](src/main/java/com/example/web3jstudy/RpcErrorHandlingDemo.java) | ✅ |
-| W1.6 | [同步与异步调用](docs/W1.6.md) | [SyncAsyncDemo.java](src/main/java/com/example/web3jstudy/SyncAsyncDemo.java) | ✅ |
-| W1.7 | [超时与客户端生命周期](docs/W1.7.md) | [TimeoutLifecycleDemo.java](src/main/java/com/example/web3jstudy/TimeoutLifecycleDemo.java) | ✅ |
-| W2.1 | [数值、单位与精度](docs/W2.1.md) | [NumberUnitPrecisionDemo.java](src/main/java/com/example/web3jstudy/NumberUnitPrecisionDemo.java) | 🔄 |
+| W0 | [最小工程与第一次调用](docs/W0.md) | [FirstRpcDemo.java](src/main/java/com/example/web3jstudy/w0/FirstRpcDemo.java) | ✅ |
+| W1.1 | [查询 Chain ID](docs/W1.1.md) | [ChainIdDemo.java](src/main/java/com/example/web3jstudy/w1/ChainIdDemo.java) | ✅ |
+| W1.2 | [客户端与通信组件](docs/W1.2.md) | [ClientServiceDemo.java](src/main/java/com/example/web3jstudy/w1/ClientServiceDemo.java) | ✅ |
+| W1.3 | [请求对象与响应对象](docs/W1.3.md) | [RequestResponseDemo.java](src/main/java/com/example/web3jstudy/w1/RequestResponseDemo.java) | ✅ |
+| W1.4 | [组合基本查询](docs/W1.4.md) | [BasicNodeInfoDemo.java](src/main/java/com/example/web3jstudy/w1/BasicNodeInfoDemo.java) | ✅ |
+| W1.5 | [错误处理](docs/W1.5.md) | [RpcErrorHandlingDemo.java](src/main/java/com/example/web3jstudy/w1/RpcErrorHandlingDemo.java) | ✅ |
+| W1.6 | [同步与异步调用](docs/W1.6.md) | [SyncAsyncDemo.java](src/main/java/com/example/web3jstudy/w1/SyncAsyncDemo.java) | ✅ |
+| W1.7 | [超时与客户端生命周期](docs/W1.7.md) | [TimeoutLifecycleDemo.java](src/main/java/com/example/web3jstudy/w1/TimeoutLifecycleDemo.java) | ✅ |
+| W2.1 | [数值、单位与精度](docs/W2.1.md) | [NumberUnitPrecisionDemo.java](src/main/java/com/example/web3jstudy/w2/NumberUnitPrecisionDemo.java) | 🔄 |
+
+# Java Package 结构
+
+源码按学习大章节分包：
+
+```text
+com.example.web3jstudy
+├─ w0    # W0.x
+├─ w1    # W1.x
+├─ w2    # W2.x
+├─ w3    # W3.x（后续）
+├─ w4    # W4.x（后续）
+├─ ...
+└─ w8    # W8.x（后续）
+```
+
+固定规则：
+
+- W0.x → `com.example.web3jstudy.w0`
+- W1.x → `com.example.web3jstudy.w1`
+- W2.x → `com.example.web3jstudy.w2`
+- 后续 W3—W8 按相同规则创建对应 package
 
 # 仓库约定
 
