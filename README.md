@@ -23,8 +23,9 @@
 | W1.5 | [错误处理](docs/W1.5.md) | [RpcErrorHandlingDemo.java](src/main/java/com/example/web3jstudy/w1/RpcErrorHandlingDemo.java) | ✅ |
 | W1.6 | [同步与异步调用](docs/W1.6.md) | [SyncAsyncDemo.java](src/main/java/com/example/web3jstudy/w1/SyncAsyncDemo.java) | ✅ |
 | W1.7 | [超时与客户端生命周期](docs/W1.7.md) | [TimeoutLifecycleDemo.java](src/main/java/com/example/web3jstudy/w1/TimeoutLifecycleDemo.java) | ✅ |
-| W2.1 | [数值、单位与精度](docs/W2.1.md) | [NumberUnitPrecisionDemo.java](src/main/java/com/example/web3jstudy/w2/NumberUnitPrecisionDemo.java) | ⏳ |
-| W2.2 | [查询 BNB 余额](docs/W2.2.md) | [BnbBalanceDemo.java](src/main/java/com/example/web3jstudy/w2/BnbBalanceDemo.java) | 🔄 |
+| W2.1 | [数值、单位与精度](docs/W2.1.md) | [NumberUnitPrecisionDemo.java](src/main/java/com/example/web3jstudy/w2/NumberUnitPrecisionDemo.java) | ✅ |
+| W2.2 | [查询 BNB 余额](docs/W2.2.md) | [BnbBalanceDemo.java](src/main/java/com/example/web3jstudy/w2/BnbBalanceDemo.java) | ✅ |
+| W2.3 | [查询区块](docs/W2.3.md) | [BlockQueryDemo.java](src/main/java/com/example/web3jstudy/w2/BlockQueryDemo.java) | 🔄 |
 
 # Java Package 结构
 
@@ -79,8 +80,9 @@ W1.6｜同步与异步调用               ✅ 已通过
 W1.7｜超时与客户端生命周期         ✅ 已通过
 
 W2｜区块、交易、回执与 BNB 余额    🔄 进行中
-W2.1｜数值、单位与精度             ⏳ 待验收
-W2.2｜查询 BNB 余额                🔄 学习中
+W2.1｜数值、单位与精度             ✅ 已通过
+W2.2｜查询 BNB 余额                ✅ 已通过
+W2.3｜查询区块                       🔄 学习中
 W3｜ABI 与只读合约调用            ⬜ 未开始
 W4｜合约事件查询与解析            ⬜ 未开始
 W5｜测试环境签名与发送交易         ⬜ 未开始
