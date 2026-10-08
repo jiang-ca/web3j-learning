@@ -18,7 +18,7 @@ public class BnbBalanceDemo {
     public static void main(String[] args) throws IOException {
 
         String rpcUrl =
-                "https://rpc.ankr.com/bsc/替换为你的_API_KEY";
+                "https://rpc.ankr.com/bsc_testnet_chapel/303785a842b9c374f30ecebd5045cf6088f5e300595eed1ed04b49dd1b7bc126";
 
         /*
          * 这里使用零地址作为公开示例地址。
@@ -27,7 +27,7 @@ public class BnbBalanceDemo {
          * 查询余额不需要该地址的私钥。
          */
         String address =
-                "0x0000000000000000000000000000000000000000";
+                "0x566c1d509521d666fdbd487a36e3162725e68b8f";
 
         Web3j web3j =
                 Web3j.build(new HttpService(rpcUrl));
